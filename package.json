@@ -1,0 +1,20 @@
+{
+    "name": "ntt-qa-e2e-challenge",
+    "version": "1.0.0",
+    "description": "E2E QA challenge Exercise NTT Data",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "test": "npx codeceptjs run --steps",
+        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+        "install:selenium": "npx selenium-standalone install",
+        "start:selenium": "npx selenium-standalone start"
+    },
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.10.0",
+        "@codeceptjs/ui": "^0.7.0",
+        "codeceptjs": "^3.5.10",
+        "selenium-standalone": "^9.3.0",
+        "webdriverio": "^6.12.1"
+    }
+}
